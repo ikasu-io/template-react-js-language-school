@@ -1,0 +1,166 @@
+.Home-hero {
+  padding-block: clamp(2.5rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem);
+  background:
+    linear-gradient(90deg, transparent calc(var(--gutter) - 2px), var(--margin) calc(var(--gutter) - 2px) var(--gutter), transparent var(--gutter)),
+    repeating-linear-gradient(transparent 0 31px, var(--sky) 31px 32px);
+}
+
+.Home-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.Home-hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+}
+
+.Home-lead {
+  max-width: 34rem;
+  margin: 1.25rem 0 0;
+  font-size: 1.1875rem;
+  color: var(--ink-soft);
+}
+
+.Home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
+}
+
+.Home-hero-photo {
+  position: relative;
+}
+
+.Home-hero-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 8px solid #fff;
+  box-shadow: 0 18px 40px -24px rgb(27 42 74 / 0.6);
+  transform: rotate(1.5deg);
+}
+
+.Home-sticky {
+  position: absolute;
+  left: -1rem;
+  bottom: -1.25rem;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--highlighter);
+  box-shadow: 0 8px 20px -12px rgb(27 42 74 / 0.6);
+  transform: rotate(-3deg);
+  font-size: 0.9375rem;
+}
+
+.Home-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.Home-next {
+  background: var(--sky);
+}
+
+.Home-next-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.Home-next-head a {
+  font-weight: 600;
+}
+
+.Home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.Home-why {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.Home-why-photo {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0.35rem;
+}
+
+.Home-reasons {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Home-reasons h3 {
+  font-size: 1.25rem;
+}
+
+.Home-reasons p {
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+}
+
+.Home-quotes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Home-quotes figure {
+  margin: 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--highlighter);
+}
+
+.Home-quotes blockquote {
+  margin: 0;
+  font: italic 400 1.125rem/1.5 var(--heading);
+}
+
+.Home-quotes figcaption {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.Home-quiz {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  background: var(--highlighter);
+  border-radius: 0.5rem;
+}
+
+.Home-quiz h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.Home-quiz p {
+  margin: 0.4rem 0 0;
+}
+
+@media (max-width: 56rem) {
+  .Home-hero-grid,
+  .Home-why,
+  .Home-quotes {
+    grid-template-columns: 1fr;
+  }
+}

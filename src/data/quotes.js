@@ -1,0 +1,17 @@
+// What students say. First names only, all made up.
+const quotes = [
+  {
+    text: 'After the A2 intensive I called my landlord about the heating — in German — and he understood me. I nearly cried.',
+    name: 'Ana, from Lisbon',
+  },
+  {
+    text: 'Jonas explained the dative with a cake. I still think about that cake.',
+    name: 'Kwame, from Accra',
+  },
+  {
+    text: 'The evening course was the only one that fit my shifts. Small class, real conversations, no textbook dialogues about trains.',
+    name: 'Priya, from Pune',
+  },
+];
+
+export default quotes;

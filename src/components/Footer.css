@@ -1,0 +1,51 @@
+.Footer {
+  margin-top: 4rem;
+  background: var(--ink);
+  color: #d9deea;
+}
+
+.Footer a {
+  color: #fff;
+}
+
+.Footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+  padding-block: 3rem 2rem;
+}
+
+.Footer-name {
+  font: 700 1.75rem/1.1 var(--heading);
+  color: #fff;
+}
+
+.Footer-tagline {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.Footer address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.Footer-links {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Footer-bottom {
+  padding-block: 1.25rem 1.75rem;
+  border-top: 1px solid rgb(255 255 255 / 0.15);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 48rem) {
+  .Footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

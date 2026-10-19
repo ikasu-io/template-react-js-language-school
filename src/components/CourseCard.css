@@ -1,0 +1,106 @@
+.CourseCard {
+  --edge: var(--sky);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 1.4rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-top: 8px solid var(--edge);
+  border-radius: 0.35rem;
+  box-shadow: 0 1px 0 var(--rule), 0 10px 24px -18px rgb(27 42 74 / 0.45);
+  transition: transform 0.15s;
+}
+
+.CourseCard:hover {
+  transform: translateY(-2px) rotate(-0.3deg);
+}
+
+.CourseCard.level-A1 { --edge: #ffe36e; }
+.CourseCard.level-A2 { --edge: #ffc46e; }
+.CourseCard.level-B1 { --edge: #9fd3a8; }
+.CourseCard.level-B2 { --edge: #8fbbe8; }
+.CourseCard.level-C1 { --edge: #c3a8e6; }
+
+.CourseCard-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.CourseCard-level {
+  padding: 0.1rem 0.5rem;
+  background: var(--edge);
+  border-radius: 0.25rem;
+  font: 700 1rem/1.4 var(--heading);
+}
+
+.CourseCard-format {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.CourseCard h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.CourseCard h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* The whole card is the link's click area. */
+.CourseCard h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.CourseCard-facts {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.CourseCard-facts div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.CourseCard-facts dt {
+  min-width: 3.5rem;
+  color: var(--ink-soft);
+}
+
+.CourseCard-facts dd {
+  margin: 0;
+}
+
+.CourseCard-bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: auto 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--rule);
+}
+
+.CourseCard-price {
+  font: 700 1.375rem/1 var(--heading);
+}
+
+.CourseCard-places {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2f7a3d;
+}
+
+.CourseCard-places.is-full {
+  color: var(--margin);
+}

@@ -1,0 +1,49 @@
+.Courses-filters {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Courses-filters fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.Courses-filters legend {
+  float: left;
+  min-width: 4.5rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.Courses-filters button {
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: 600 0.9375rem/1.2 var(--body);
+  cursor: pointer;
+}
+
+.Courses-filters button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.Courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 1.25rem;
+}
+
+.Courses-empty {
+  padding: 1.5rem;
+  border: 2px dashed var(--rule);
+  color: var(--ink-soft);
+}

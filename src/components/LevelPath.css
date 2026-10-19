@@ -1,0 +1,62 @@
+.LevelPath {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.LevelPath li {
+  position: relative;
+  padding: 1.25rem 1rem 1rem;
+  border-top: 3px dotted var(--ink);
+}
+
+.LevelPath li.is-current {
+  background: var(--highlighter);
+}
+
+.LevelPath-step {
+  position: absolute;
+  top: -0.8rem;
+  left: 1rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.LevelPath-key {
+  display: block;
+  font: 700 2.25rem/1 var(--heading);
+  text-decoration: none;
+}
+
+.LevelPath-key:hover {
+  color: var(--margin);
+}
+
+.LevelPath-name {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 700;
+}
+
+.LevelPath p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 56rem) {
+  .LevelPath {
+    grid-template-columns: 1fr;
+  }
+}
