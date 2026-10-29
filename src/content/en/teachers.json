@@ -1,0 +1,26 @@
+{
+  "mira": {
+    "role": "Co-founder, director of studies",
+    "bio": "Has taught German as a foreign language since 2006; writes our exam preparation materials."
+  },
+  "jonas": {
+    "role": "Co-founder, teacher",
+    "bio": "Teaches the evening courses and believes every grammar rule needs a joke."
+  },
+  "aylin": {
+    "role": "Teacher, exam trainer",
+    "bio": "Licensed telc examiner; runs the B1 and B2 exam preparation."
+  },
+  "tomasz": {
+    "role": "Teacher",
+    "bio": "Beginners’ classes; has never once been impatient with the dative."
+  },
+  "grace": {
+    "role": "Teacher, online courses",
+    "bio": "Moved to Saalbrück herself in 2012 and remembers exactly which words were hardest."
+  },
+  "lea": {
+    "role": "Teacher",
+    "bio": "Teaches the C1 course and the pronunciation workshop."
+  }
+}

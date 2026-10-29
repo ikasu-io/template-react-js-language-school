@@ -1,0 +1,92 @@
+{
+  "a1-intensive-nov": {
+    "title": "A1 Intensive",
+    "days": "Monday to Friday",
+    "outcomes": [
+      "Introduce yourself and others",
+      "Shop, order and ask for prices",
+      "Make an appointment by phone"
+    ]
+  },
+  "a1-evening-nov": {
+    "title": "A1 Evening",
+    "days": "Tuesday and Thursday",
+    "outcomes": [
+      "Introduce yourself and others",
+      "Talk about your work and your week",
+      "Read signs, menus and simple letters"
+    ]
+  },
+  "a2-intensive-nov": {
+    "title": "A2 Intensive",
+    "days": "Monday to Friday",
+    "outcomes": [
+      "Describe what happened yesterday (Perfekt)",
+      "Deal with landlords, doctors and the Bürgeramt",
+      "Write short emails and messages"
+    ]
+  },
+  "a2-online-jan": {
+    "title": "A2 Online",
+    "days": "Monday and Wednesday",
+    "outcomes": [
+      "Talk about plans and wishes",
+      "Compare things and give reasons",
+      "Follow slow, clear German on the phone"
+    ]
+  },
+  "b1-intensive-jan": {
+    "title": "B1 Intensive",
+    "days": "Monday to Friday",
+    "outcomes": [
+      "Follow meetings and conversations at work",
+      "Say what you think and why",
+      "Write formal emails and complaints"
+    ]
+  },
+  "b1-evening-nov": {
+    "title": "B1 Evening",
+    "days": "Monday and Wednesday",
+    "outcomes": [
+      "Tell a story with all its twists",
+      "Understand the news on the radio",
+      "Handle a job interview"
+    ]
+  },
+  "b1-telc-prep": {
+    "title": "telc Deutsch B1 preparation",
+    "days": "Saturdays",
+    "outcomes": [
+      "Know every part of the exam and its timing",
+      "Two full mock exams, marked",
+      "Speaking practice in pairs, as in the exam"
+    ]
+  },
+  "b2-evening-jan": {
+    "title": "B2 Evening",
+    "days": "Tuesday and Thursday",
+    "outcomes": [
+      "Take part in discussions and meetings",
+      "Read newspaper articles and reports",
+      "Write applications and longer texts"
+    ]
+  },
+  "b2-goethe-prep": {
+    "title": "Goethe-Zertifikat B2 preparation",
+    "days": "Saturdays",
+    "outcomes": [
+      "All four modules, step by step",
+      "Strategies for the reading and listening parts",
+      "Two full mock exams, marked"
+    ]
+  },
+  "c1-intensive-feb": {
+    "title": "C1 Intensive",
+    "days": "Monday to Friday",
+    "outcomes": [
+      "Follow lectures and complex texts",
+      "Write academic and professional texts",
+      "Ready for the C1 exam most universities ask for"
+    ]
+  }
+}

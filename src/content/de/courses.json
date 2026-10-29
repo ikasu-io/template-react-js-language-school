@@ -1,0 +1,92 @@
+{
+  "a1-intensive-nov": {
+    "title": "A1 Intensivkurs",
+    "days": "Montag bis Freitag",
+    "outcomes": [
+      "Dich und andere vorstellen",
+      "Einkaufen, bestellen und nach Preisen fragen",
+      "Telefonisch einen Termin ausmachen"
+    ]
+  },
+  "a1-evening-nov": {
+    "title": "A1 Abendkurs",
+    "days": "Dienstag und Donnerstag",
+    "outcomes": [
+      "Dich und andere vorstellen",
+      "Über deine Arbeit und deine Woche sprechen",
+      "Schilder, Speisekarten und einfache Briefe lesen"
+    ]
+  },
+  "a2-intensive-nov": {
+    "title": "A2 Intensivkurs",
+    "days": "Montag bis Freitag",
+    "outcomes": [
+      "Erzählen, was gestern passiert ist (Perfekt)",
+      "Vermieter, Arztpraxis und Bürgeramt meistern",
+      "Kurze E-Mails und Nachrichten schreiben"
+    ]
+  },
+  "a2-online-jan": {
+    "title": "A2 Online",
+    "days": "Montag und Mittwoch",
+    "outcomes": [
+      "Über Pläne und Wünsche sprechen",
+      "Dinge vergleichen und Gründe nennen",
+      "Langsamem, deutlichem Deutsch am Telefon folgen"
+    ]
+  },
+  "b1-intensive-jan": {
+    "title": "B1 Intensivkurs",
+    "days": "Montag bis Freitag",
+    "outcomes": [
+      "Besprechungen und Gesprächen bei der Arbeit folgen",
+      "Sagen, was du denkst und warum",
+      "Formelle E-Mails und Beschwerden schreiben"
+    ]
+  },
+  "b1-evening-nov": {
+    "title": "B1 Abendkurs",
+    "days": "Montag und Mittwoch",
+    "outcomes": [
+      "Eine Geschichte mit allen Wendungen erzählen",
+      "Die Nachrichten im Radio verstehen",
+      "Ein Vorstellungsgespräch führen"
+    ]
+  },
+  "b1-telc-prep": {
+    "title": "Vorbereitung auf telc Deutsch B1",
+    "days": "Samstags",
+    "outcomes": [
+      "Jeden Prüfungsteil und seine Zeiten kennen",
+      "Zwei komplette Probeprüfungen mit Korrektur",
+      "Sprechen zu zweit üben, wie in der Prüfung"
+    ]
+  },
+  "b2-evening-jan": {
+    "title": "B2 Abendkurs",
+    "days": "Dienstag und Donnerstag",
+    "outcomes": [
+      "In Diskussionen und Besprechungen mitreden",
+      "Zeitungsartikel und Berichte lesen",
+      "Bewerbungen und längere Texte schreiben"
+    ]
+  },
+  "b2-goethe-prep": {
+    "title": "Vorbereitung auf das Goethe-Zertifikat B2",
+    "days": "Samstags",
+    "outcomes": [
+      "Alle vier Module, Schritt für Schritt",
+      "Strategien für die Teile Lesen und Hören",
+      "Zwei komplette Probeprüfungen mit Korrektur"
+    ]
+  },
+  "c1-intensive-feb": {
+    "title": "C1 Intensivkurs",
+    "days": "Montag bis Freitag",
+    "outcomes": [
+      "Vorlesungen und komplexen Texten folgen",
+      "Wissenschaftliche und berufliche Texte schreiben",
+      "Fit für die C1-Prüfung, die die meisten Hochschulen verlangen"
+    ]
+  }
+}

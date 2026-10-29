@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
 import levels from '../data/levels';
@@ -9,12 +10,13 @@ import './Courses.css';
 // filters live in the address (?level=B1&format=evening), so a filtered list
 // can be linked to.
 function Courses() {
-  usePageTitle('Courses', 'German courses from A1 to C1: intensive, evening, online and exam preparation.');
+  const { t, i18n } = useTranslation();
+  usePageTitle(t('courses.pageTitle'), t('courses.description'));
   const [params, setParams] = useSearchParams();
   const level = params.get('level') || 'all';
   const format = params.get('format') || 'all';
 
-  const shown = upcomingCourses().filter(
+  const shown = upcomingCourses(i18n.language).filter(
     (course) =>
       (level === 'all' || course.level === level) && (format === 'all' || course.format === format),
   );
@@ -29,40 +31,40 @@ function Courses() {
   return (
     <div className="container">
       <header className="page-head">
-        <h1>Courses</h1>
-        <p>Every course has ten places at most. Prices are for the whole course, books included.</p>
+        <h1>{t('courses.title')}</h1>
+        <p>{t('courses.lead')}</p>
       </header>
 
       <div className="Courses-filters">
         <fieldset>
-          <legend>Level</legend>
-          {['all', ...levels.map((l) => l.key)].map((key) => (
+          <legend>{t('courses.level')}</legend>
+          {['all', ...levels].map((key) => (
             <button
               key={key}
               type="button"
               aria-pressed={level === key}
               onClick={() => choose('level', key)}
             >
-              {key === 'all' ? 'All levels' : key}
+              {key === 'all' ? t('courses.allLevels') : key}
             </button>
           ))}
         </fieldset>
         <fieldset>
-          <legend>Format</legend>
-          {['all', ...Object.keys(FORMATS)].map((key) => (
+          <legend>{t('courses.format')}</legend>
+          {['all', ...FORMATS].map((key) => (
             <button
               key={key}
               type="button"
               aria-pressed={format === key}
               onClick={() => choose('format', key)}
             >
-              {key === 'all' ? 'All formats' : FORMATS[key]}
+              {key === 'all' ? t('courses.allFormats') : t(`formats.${key}`)}
             </button>
           ))}
         </fieldset>
       </div>
 
-      <h2 className="visually-hidden">Courses starting soon</h2>
+      <h2 className="visually-hidden">{t('courses.listTitle')}</h2>
       {shown.length > 0 ? (
         <div className="Courses-grid">
           {shown.map((course) => (
@@ -70,9 +72,7 @@ function Courses() {
           ))}
         </div>
       ) : (
-        <p className="Courses-empty">
-          No course like that is planned right now. Write to us — if three people ask, we start one.
-        </p>
+        <p className="Courses-empty">{t('courses.empty')}</p>
       )}
     </div>
   );

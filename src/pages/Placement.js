@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import CourseCard from '../components/CourseCard';
-import levels from '../data/levels';
+import { useContent } from '../content';
 import quiz, { levelForScore } from '../data/quiz';
+import useLocalePath from '../hooks/useLocalePath';
 import usePageTitle from '../hooks/usePageTitle';
 import { upcomingCourses } from '../utils/courses';
 import './Placement.css';
@@ -10,7 +12,10 @@ import './Placement.css';
 // The placement quiz: one question at a time, then a level and the courses
 // that match it. Nothing is sent anywhere; it all happens in the browser.
 function Placement() {
-  usePageTitle('Find your level', 'A ten-question German placement quiz with a suggested level from A1 to C1.');
+  const { t, i18n } = useTranslation();
+  usePageTitle(t('placement.pageTitle'), t('placement.description'));
+  const to = useLocalePath();
+  const levels = useContent('levels');
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState([]);
   const done = step === quiz.length;
@@ -28,8 +33,8 @@ function Placement() {
   if (done) {
     const score = answers.filter((a, i) => a === quiz[i].answer).length;
     const levelKey = levelForScore(score);
-    const level = levels.find((l) => l.key === levelKey);
-    const matching = upcomingCourses()
+    const level = levels[levelKey];
+    const matching = upcomingCourses(i18n.language)
       .filter((course) => course.level === levelKey)
       .slice(0, 3);
 
@@ -37,15 +42,19 @@ function Placement() {
       <div className="container">
         <header className="page-head">
           <h1>
-            Your level: <span className="mark">{levelKey}</span>
+            <Trans
+              i18nKey="placement.result"
+              values={{ level: levelKey }}
+              components={{ mark: <span className="mark" /> }}
+            />
           </h1>
           <p>
-            {score} of {quiz.length} right. {level.name}: {level.canDo}
+            {t('placement.score', { score, total: quiz.length, name: level.name, canDo: level.canDo })}
           </p>
         </header>
         {matching.length > 0 && (
           <>
-            <h2 className="Placement-subtitle">Courses at {levelKey}</h2>
+            <h2 className="Placement-subtitle">{t('placement.coursesAt', { level: levelKey })}</h2>
             <div className="Placement-courses">
               {matching.map((course) => (
                 <CourseCard key={course.id} course={course} />
@@ -54,8 +63,8 @@ function Placement() {
           </>
         )}
         <p className="Placement-note">
-          A quiz is only a start — on your first day we talk for fifteen minutes and move you if
-          another class fits better. <button type="button" onClick={restart}>Take it again</button>
+          {t('placement.note')}{' '}
+          <button type="button" onClick={restart}>{t('placement.again')}</button>
         </p>
       </div>
     );
@@ -66,12 +75,12 @@ function Placement() {
   return (
     <div className="container">
       <header className="page-head">
-        <h1>Find your level</h1>
-        <p>Ten sentences, getting harder. Pick the word that fits — guessing is fine, stopping is too.</p>
+        <h1>{t('placement.title')}</h1>
+        <p>{t('placement.lead')}</p>
       </header>
       <section className="Placement-card" aria-live="polite">
         <p className="Placement-progress">
-          Question {step + 1} of {quiz.length}
+          {t('placement.progress', { step: step + 1, total: quiz.length })}
           <span className="Placement-bar">
             <span style={{ width: `${(step / quiz.length) * 100}%` }} />
           </span>
@@ -97,12 +106,12 @@ function Placement() {
         </div>
         <p className="Placement-skip">
           <button type="button" onClick={() => setStep(quiz.length)}>
-            I don’t know any more — show my result
+            {t('placement.skip')}
           </button>
         </p>
       </section>
       <p className="Placement-note">
-        Prefer to talk? <Link to="/contact">Come by the office</Link> for a free 15-minute chat.
+        <Trans i18nKey="placement.talk" components={{ contact: <Link to={to('/contact')} /> }} />
       </p>
     </div>
   );

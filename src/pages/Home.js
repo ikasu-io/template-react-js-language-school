@@ -1,66 +1,58 @@
+import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Photo from '../components/Photo';
 import CourseCard from '../components/CourseCard';
 import LevelPath from '../components/LevelPath';
-import quotes from '../data/quotes';
+import { useContent } from '../content';
 import site from '../data/site';
+import useLocalePath from '../hooks/useLocalePath';
 import usePageTitle from '../hooks/usePageTitle';
 import { upcomingCourses } from '../utils/courses';
 import './Home.css';
 
-const reasons = [
-  {
-    title: 'Ten people at most',
-    text: 'Every class has ten seats. You will speak in every lesson, whether you planned to or not.',
-  },
-  {
-    title: 'Evenings that fit a job',
-    text: 'Two evenings a week from 18:30, or online after the children are in bed.',
-  },
-  {
-    title: 'German you need here',
-    text: 'Letters from the Finanzamt, calls to the landlord, small talk at the bakery — not dialogues about trains.',
-  },
-];
-
 function Home() {
   usePageTitle();
-  const next = upcomingCourses().slice(0, 3);
+  const { t, i18n } = useTranslation();
+  const to = useLocalePath();
+  const { reasons } = useContent('home');
+  const quotes = useContent('quotes');
+  const next = upcomingCourses(i18n.language).slice(0, 3);
 
   return (
     <>
       <section className="Home-hero">
         <div className="container Home-hero-grid">
           <div>
-            <p className="eyebrow">German school in {site.address.city} · since 2015</p>
+            <p className="eyebrow">{t('home.eyebrow', { city: site.address.city })}</p>
             <h1>
-              German for people who <span className="mark">live here now</span>.
+              <Trans i18nKey="home.title" components={{ mark: <span className="mark" /> }} />
             </h1>
-            <p className="Home-lead">
-              Small classes from A1 to C1, in the mornings, evenings or online, with teachers who
-              moved countries themselves and know which words you need first.
-            </p>
+            <p className="Home-lead">{t('home.lead')}</p>
             <p className="Home-actions">
-              <Link className="button" to="/placement">
-                Find your level in 3 minutes
+              <Link className="button" to={to('/placement')}>
+                {t('home.findLevel')}
               </Link>
-              <Link className="button is-light" to="/courses">
-                See all courses
+              <Link className="button is-light" to={to('/courses')}>
+                {t('home.seeCourses')}
               </Link>
             </p>
           </div>
           <div className="Home-hero-photo">
             <Photo name="hero-classroom" eager sizes="(min-width: 60rem) 36rem, 100vw" />
             <p className="Home-sticky">
-              Next start: <strong>{next[0] ? next[0].title : 'soon'}</strong>
+              <Trans
+                i18nKey="home.nextStart"
+                values={{ title: next[0] ? next[0].title : t('home.soon') }}
+                components={{ strong: <strong /> }}
+              />
             </p>
           </div>
         </div>
       </section>
 
       <section className="section container">
-        <p className="eyebrow">Five levels</p>
-        <h2 className="Home-title">From “Hallo” to the university</h2>
+        <p className="eyebrow">{t('home.levelsEyebrow')}</p>
+        <h2 className="Home-title">{t('home.levelsTitle')}</h2>
         <LevelPath />
       </section>
 
@@ -68,10 +60,10 @@ function Home() {
         <div className="container">
           <div className="Home-next-head">
             <div>
-              <p className="eyebrow">Starting soon</p>
-              <h2 className="Home-title">The next courses</h2>
+              <p className="eyebrow">{t('home.nextEyebrow')}</p>
+              <h2 className="Home-title">{t('home.nextTitle')}</h2>
             </div>
-            <Link to="/courses">All courses →</Link>
+            <Link to={to('/courses')}>{t('home.allCourses')}</Link>
           </div>
           <div className="Home-cards">
             {next.map((course) => (
@@ -84,8 +76,8 @@ function Home() {
       <section className="section container Home-why">
         <Photo name="kitchen-break" sizes="(min-width: 60rem) 30rem, 100vw" className="Home-why-photo" />
         <div>
-          <p className="eyebrow">Why Satzbau</p>
-          <h2 className="Home-title">A school, not a call centre</h2>
+          <p className="eyebrow">{t('home.whyEyebrow')}</p>
+          <h2 className="Home-title">{t('home.whyTitle')}</h2>
           <ul className="Home-reasons">
             {reasons.map((reason) => (
               <li key={reason.title}>
@@ -98,12 +90,12 @@ function Home() {
       </section>
 
       <section className="section container">
-        <p className="eyebrow">Students</p>
-        <h2 className="Home-title">In their words</h2>
+        <p className="eyebrow">{t('home.quotesEyebrow')}</p>
+        <h2 className="Home-title">{t('home.quotesTitle')}</h2>
         <div className="Home-quotes">
           {quotes.map((quote) => (
             <figure key={quote.name}>
-              <blockquote>“{quote.text}”</blockquote>
+              <blockquote>{t('home.quote', { text: quote.text })}</blockquote>
               <figcaption>— {quote.name}</figcaption>
             </figure>
           ))}
@@ -112,11 +104,11 @@ function Home() {
 
       <section className="container Home-quiz">
         <div>
-          <h2>Not sure where to start?</h2>
-          <p>Ten questions, no sign-up, a level and the right courses at the end.</p>
+          <h2>{t('home.quizTitle')}</h2>
+          <p>{t('home.quizText')}</p>
         </div>
-        <Link className="button" to="/placement">
-          Take the placement quiz
+        <Link className="button" to={to('/placement')}>
+          {t('home.quizButton')}
         </Link>
       </section>
     </>

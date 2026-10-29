@@ -1,15 +1,18 @@
+import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import useLocalePath from '../hooks/useLocalePath';
 import usePageTitle from '../hooks/usePageTitle';
 
 function NotFound() {
-  usePageTitle('Page not found');
+  const { t } = useTranslation();
+  usePageTitle(t('notFound.pageTitle'));
+  const to = useLocalePath();
   return (
     <div className="container">
       <header className="page-head">
-        <h1>Diese Seite gibt es nicht.</h1>
+        <h1>{t('notFound.title')}</h1>
         <p>
-          That’s German for “this page doesn’t exist”. You’ve already learnt something.{' '}
-          <Link to="/">Back to the start</Link>.
+          <Trans i18nKey="notFound.text" components={{ home: <Link to={to('/')} /> }} />
         </p>
       </header>
     </div>

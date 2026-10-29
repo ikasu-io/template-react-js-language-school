@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "Satzbau — Deutsch für alle, die jetzt hier leben",
+    "description": "Satzbau ist eine kleine Sprachschule in Saalbrück: Deutschkurse von A1 bis C1, morgens, abends oder online, mit höchstens zehn Leuten pro Gruppe.",
+    "noscript": "Bitte aktiviere JavaScript, um diese Seite zu sehen."
+  },
+  "site": {
+    "tagline": "Deutsch für alle, die jetzt hier leben.",
+    "floor": "2. Stock"
+  },
+  "skip": "Zum Inhalt springen",
+  "header": {
+    "navLabel": "Hauptmenü",
+    "menu": "Menü",
+    "close": "Schließen",
+    "courses": "Kurse",
+    "placement": "Einstufungstest",
+    "school": "Die Schule",
+    "contact": "Kontakt",
+    "ask": "Frag uns",
+    "otherLanguage": "English"
+  },
+  "footer": {
+    "courses": "Alle Kurse",
+    "placement": "Einstufungstest",
+    "school": "Team & Preise",
+    "demo": "Fiktive Demo-Website – Inhalte und Bilder mit KI erstellt"
+  },
+  "formats": {
+    "intensive": "Intensivkurs",
+    "evening": "Abendkurs",
+    "online": "Online",
+    "exam": "Prüfungsvorbereitung"
+  },
+  "courseCard": {
+    "starts": "Beginn",
+    "when": "Wann",
+    "full": "Ausgebucht – Warteliste"
+  },
+  "placesLeft_one": "Noch {{count}} Platz frei",
+  "placesLeft_other": "Noch {{count}} Plätze frei",
+  "home": {
+    "eyebrow": "Sprachschule in {{city}} · seit 2015",
+    "title": "Deutsch für alle, die <mark>jetzt hier leben</mark>.",
+    "lead": "Kleine Gruppen von A1 bis C1, morgens, abends oder online – mit Lehrkräften, die selbst einmal in ein anderes Land gezogen sind und wissen, welche Wörter du zuerst brauchst.",
+    "findLevel": "In 3 Minuten dein Niveau finden",
+    "seeCourses": "Alle Kurse ansehen",
+    "nextStart": "Nächster Start: <strong>{{title}}</strong>",
+    "soon": "bald",
+    "levelsEyebrow": "Fünf Niveaus",
+    "levelsTitle": "Von „Hallo“ bis zur Uni",
+    "nextEyebrow": "Demnächst",
+    "nextTitle": "Die nächsten Kurse",
+    "allCourses": "Alle Kurse →",
+    "whyEyebrow": "Warum Satzbau",
+    "whyTitle": "Eine Schule, kein Callcenter",
+    "quotesEyebrow": "Teilnehmende",
+    "quotesTitle": "In ihren eigenen Worten",
+    "quote": "„{{text}}“",
+    "quizTitle": "Du weißt nicht, wo du anfangen sollst?",
+    "quizText": "Zehn Fragen, keine Anmeldung – am Ende stehen dein Niveau und die passenden Kurse.",
+    "quizButton": "Zum Einstufungstest"
+  },
+  "courses": {
+    "pageTitle": "Kurse",
+    "description": "Deutschkurse von A1 bis C1: Intensivkurse, Abendkurse, Online-Kurse und Prüfungsvorbereitung.",
+    "title": "Kurse",
+    "lead": "Jeder Kurs hat höchstens zehn Plätze. Die Preise gelten für den ganzen Kurs, Bücher inklusive.",
+    "level": "Niveau",
+    "allLevels": "Alle Niveaus",
+    "format": "Format",
+    "allFormats": "Alle Formate",
+    "listTitle": "Kurse, die bald beginnen",
+    "empty": "So ein Kurs ist gerade nicht geplant. Schreib uns – wenn drei Leute fragen, starten wir einen."
+  },
+  "course": {
+    "description": "{{title}}: {{days}}, {{time}}, ab dem {{start}}.",
+    "back": "← Alle Kurse",
+    "summary": "{{level}} · {{format}} · {{lessons}} Unterrichtseinheiten à 45 Minuten",
+    "outcomes": "Danach kannst du",
+    "schedule": "Termine",
+    "dates": "Zeitraum",
+    "days": "Tage",
+    "time": "Uhrzeit",
+    "where": "Ort",
+    "online": "Online – den Link bekommst du eine Woche vorher",
+    "priceNote": "für den ganzen Kurs, Bücher inklusive",
+    "ask": "Platz anfragen",
+    "full": "Dieser Kurs ist ausgebucht.",
+    "waitingList": "Auf die Warteliste",
+    "notSure": "Nicht sicher, ob das dein Niveau ist? <quiz>Mach den Test</quiz>.",
+    "subject": "Platz im Kurs {{title}} ({{start}})"
+  },
+  "placement": {
+    "pageTitle": "Einstufungstest",
+    "description": "Ein Einstufungstest für Deutsch mit zehn Fragen – am Ende steht ein Niveau von A1 bis C1.",
+    "title": "Finde dein Niveau",
+    "lead": "Zehn Sätze, die immer schwerer werden. Wähl das Wort, das passt – raten ist erlaubt, aufhören auch.",
+    "progress": "Frage {{step}} von {{total}}",
+    "skip": "Ich weiß nicht weiter – zeig mir mein Ergebnis",
+    "talk": "Lieber persönlich? <contact>Komm im Büro vorbei</contact> – das Gespräch dauert 15 Minuten und kostet nichts.",
+    "result": "Dein Niveau: <mark>{{level}}</mark>",
+    "score": "{{score}} von {{total}} richtig. {{name}}: {{canDo}}",
+    "coursesAt": "Kurse auf Niveau {{level}}",
+    "note": "Ein Test ist nur der Anfang – am ersten Kurstag sprechen wir eine Viertelstunde mit dir und setzen dich um, wenn eine andere Gruppe besser passt.",
+    "again": "Noch einmal"
+  },
+  "school": {
+    "pageTitle": "Die Schule",
+    "description": "Das Team, das Haus, Rabatte und Antworten auf häufige Fragen.",
+    "title": "Die Schule",
+    "teachersEyebrow": "Team",
+    "teachersTitle": "Wir sind sechs – und alle schon einmal ins Ausland gezogen",
+    "speaks": "Spricht {{languages}}",
+    "pricesEyebrow": "Preise",
+    "pricesTitle": "So zahlst du weniger",
+    "faqEyebrow": "Fragen",
+    "faqTitle": "Bevor du buchst"
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "description": "Schreib der {{name}} oder komm im Büro in {{city}} vorbei.",
+    "title": "Sag hallo",
+    "lead": "Schreib uns auf Deutsch, Englisch oder irgendetwas dazwischen. Wir antworten innerhalb eines Werktags und rufen dich auch gern zurück.",
+    "office": "Das Büro",
+    "monThu": "Montag bis Donnerstag",
+    "fri": "Freitag",
+    "gettingHere": "So findest du uns",
+    "caption": "Du kannst nicht vorbeikommen? Jedes Niveau gibt es auch online, am Abend."
+  },
+  "notFound": {
+    "pageTitle": "Seite nicht gefunden",
+    "title": "Diese Seite gibt es nicht.",
+    "text": "Vielleicht hat sich in der Adresse ein Tippfehler versteckt. <home>Zurück zur Startseite</home>."
+  },
+  "images": {
+    "hero-classroom": "Ein kleiner, heller Klassenraum: Erwachsene an einem langen Holztisch, eine Lehrerin am Whiteboard",
+    "whiteboard-hands": "Die Hand einer Lehrerin zeichnet Pfeile und Kästchen auf ein Whiteboard",
+    "city-walk": "Eine Gruppe Kursteilnehmender läuft an einem Herbstnachmittag durch die Altstadt",
+    "kitchen-break": "Die Schulküche in der Pause: ein Wasserkocher, Tassen und ein Teller Brezeln",
+    "notebooks": "Aufgeschlagene Hefte, ein Textmarker und Karteikarten auf einem Holztisch",
+    "courtyard": "Der Innenhof des alten Backsteinschulhauses mit einer großen Linde und Fahrrädern",
+    "online-lesson": "Ein Laptop auf einem Küchentisch während einer Online-Stunde, daneben ein Heft und eine Tasse"
+  }
+}

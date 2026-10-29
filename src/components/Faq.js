@@ -1,7 +1,9 @@
-import faq from '../data/faq';
+import { useContent } from '../content';
 import './Faq.css';
 
 function Faq() {
+  const faq = useContent('faq');
+
   return (
     <div className="Faq">
       {faq.map((item) => (

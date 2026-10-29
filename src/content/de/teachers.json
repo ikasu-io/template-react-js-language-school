@@ -1,0 +1,26 @@
+{
+  "mira": {
+    "role": "Mitgründerin, Studienleitung",
+    "bio": "Unterrichtet seit 2006 Deutsch als Fremdsprache und schreibt unsere Materialien für die Prüfungsvorbereitung."
+  },
+  "jonas": {
+    "role": "Mitgründer, Lehrer",
+    "bio": "Unterrichtet die Abendkurse und findet, dass zu jeder Grammatikregel ein Witz gehört."
+  },
+  "aylin": {
+    "role": "Lehrerin, Prüfungstrainerin",
+    "bio": "Lizenzierte telc-Prüferin; leitet die Prüfungsvorbereitung für B1 und B2."
+  },
+  "tomasz": {
+    "role": "Lehrer",
+    "bio": "Unterrichtet die Anfängerkurse und hat beim Dativ noch nie die Geduld verloren."
+  },
+  "grace": {
+    "role": "Lehrerin, Online-Kurse",
+    "bio": "Ist 2012 selbst nach Saalbrück gezogen und weiß noch genau, welche Wörter am schwersten waren."
+  },
+  "lea": {
+    "role": "Lehrerin",
+    "bio": "Unterrichtet den C1-Kurs und den Aussprache-Workshop."
+  }
+}

@@ -1,25 +1,19 @@
-// The school itself: name, address, office hours, discounts.
+// The school itself, the same in every language: name, address, e-mail,
+// office hours. Texts about it are in src/locales and src/content.
 const site = {
   name: 'Satzbau',
   fullName: 'Satzbau Sprachschule',
-  tagline: 'German for people who live here now.',
   url: 'https://satzbau.example',
   email: 'hallo@satzbau.example',
   address: {
-    street: 'Lindenhof 3, 2nd floor',
+    street: 'Lindenhof 3', // the floor is in src/locales (site.floor)
     postcode: '07999',
     city: 'Saalbrück',
   },
+  // `days` names a text in src/locales (contact.monThu, contact.fri)
   officeHours: [
-    { days: 'Monday to Thursday', hours: '9:00–19:00' },
-    { days: 'Friday', hours: '9:00–14:00' },
-  ],
-  gettingHere:
-    'Tram 3 or 5 to Lindenhof, then through the archway into the courtyard. Bike racks under the linden tree; no parking on site.',
-  discounts: [
-    'Students and apprentices: 10% off every course',
-    'Book two courses in a row: 15% off the second',
-    'Jobcentre and BAMF vouchers accepted for integration courses',
+    { days: 'monThu', hours: '9:00–19:00' },
+    { days: 'fri', hours: '9:00–14:00' },
   ],
 };
 

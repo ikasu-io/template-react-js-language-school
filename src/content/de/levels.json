@@ -1,0 +1,22 @@
+{
+  "A1": {
+    "name": "Einstieg",
+    "canDo": "Dich vorstellen, Essen bestellen, nach dem Weg fragen, ein Formular ausfüllen."
+  },
+  "A2": {
+    "name": "Grundstufe",
+    "canDo": "Über deinen Tag, deine Arbeit und deine Pläne sprechen; Behördengänge beim Bürgeramt erledigen."
+  },
+  "B1": {
+    "name": "Mittelstufe",
+    "canDo": "Gesprächen bei der Arbeit folgen, eine E-Mail schreiben, sagen, was du denkst und warum."
+  },
+  "B2": {
+    "name": "Gute Mittelstufe",
+    "canDo": "In Besprechungen mitreden, Nachrichten lesen, dich auf Deutsch bewerben."
+  },
+  "C1": {
+    "name": "Fortgeschritten",
+    "canDo": "Ganz auf Deutsch studieren oder arbeiten – das Niveau, das die meisten Hochschulen verlangen."
+  }
+}

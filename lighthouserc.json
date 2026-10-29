@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./dist",
-      "url": ["/", "/courses/", "/courses/b1-evening-nov/", "/placement/", "/school/"],
+      "url": ["/", "/courses/", "/courses/b1-evening-nov/", "/placement/", "/school/", "/de/", "/de/courses/b1-evening-nov/"],
       "numberOfRuns": 3
     },
     "assert": {

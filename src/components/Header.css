@@ -116,7 +116,16 @@
     font-size: 1.125rem;
   }
 
-  .Header-cta {
+  .Header-cta,
+  .Header-lang {
     align-self: start;
   }
+}
+
+.Header-lang {
+  font-size: 0.9375rem;
+}
+
+.Header-lang:hover {
+  text-decoration: underline !important;
 }
