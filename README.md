@@ -86,6 +86,14 @@ files can keep their names.
 Netlify, Cloudflare Pages, GitHub Pages, your own server. Set `SITE_URL`
 in `vite.config.js` and `url` in `src/data/site.js` to your domain.
 
+## Using this for a real site
+
+The images look real but were generated with AI, and the
+notice in the footer is what labels them. If you publish a real site with
+them and remove that notice, you may have to label them yourself, for
+example under Article 50 of the EU AI Act. Replacing them with your own
+avoids the question.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE). Images: see [IMAGES.md](IMAGES.md).
